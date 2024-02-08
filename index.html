@@ -8,13 +8,24 @@
 </head>
 <body>
     <div id="app">
-        aaa
+        <header>
+
+        </header>
+
+        <main>
+            <h1>todolist</h1>
+            <ul>
+                <li v-for="elem in todolist">
+                    {{elem.andare}}
+                </li>
+            </ul>
+        </main>
 
     </div>
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://cdn.jsdeliver.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="sript.js"></script>
 </body>
 </html>
