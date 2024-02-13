@@ -4,7 +4,11 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        todolist:[]
+       
+        todolist:[],
+        NewTodo: ''
+        
+       
       }
     },
     mounted() {
@@ -15,6 +19,16 @@ const { createApp } = Vue
             this.todolist = res.data
             
         });
+
+    },
+    methods: {
+      addtodo(){
+        this.todolist.push({
+          andare: this.NewTodo
+
+        });
+        this.NewTodo = '';
+      }
 
     }
   }).mount('#app')
